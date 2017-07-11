@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>teste menu</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+
+  </head>
+
+  <body>
+
+    
+  <div>
+    <a class="logo" href="#home"><img src="img/logo.svg" alt="" width="40px" height="40px"></a>
+    <div class="menuteste nav-btn" >
+      <nav class="teste" onclick="slide()">
+        <div id="btn">
+        </div>
+        <div id="btn">
+        </div>
+        <div id="btn">
+        </div>
+      </nav>
+      </div>
+    <nav class="menu-navigation-basic" id="nav-slide">
+
+     <ul onclick="slide()">
+       <li><a href="#home">Home</a></li>
+       <li><a href="#portfolio">Portfólio</a></li>
+       <li><a href="#servico">Serviço</a></li>
+       <li><a href="#contato">Contato</a></li>
+     </ul>
+   </nav>
+ </div>
+
+
+
+    <script>
+      function slide(){
+        var slide = document.getElementById("nav-slide");
+        slide.style.height = window.innerHeight - 60 + "px";
+
+        if(slide.style.left == "0px"){
+          slide.style.left = "-200px";
+        }else{
+          slide.style.left = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
